@@ -11,7 +11,8 @@ class Recipe extends Model
 
     protected $fillable = [
         'name',
-        'address',
-        'tel',
+        'images',
+        'rating',
+        'totalTime',
     ];
 }

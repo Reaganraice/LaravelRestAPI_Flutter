@@ -28,8 +28,9 @@ class RecipeController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'address' => 'required',
-            'tel' => 'required',
+            'images' => 'required',
+            'rating' => 'required',
+            'totalTime' => 'required',
         ]);
         return Recipe::create($request->all());
     }
